@@ -183,42 +183,6 @@ th{
           <td>10</td>
           <td>10</td>
         </tr>
-	       <tr>
-          <td>笋子</td>
-          <td>100</td>
-          <td>200</td>
-          <td>100</td>
-          <td>10</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-	       <tr>
-          <td>笋子</td>
-          <td>100</td>
-          <td>200</td>
-          <td>100</td>
-          <td>10</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-	       <tr>
-          <td>笋子</td>
-          <td>100</td>
-          <td>200</td>
-          <td>100</td>
-          <td>10</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
-	       <tr>
-          <td>笋子</td>
-          <td>100</td>
-          <td>200</td>
-          <td>100</td>
-          <td>10</td>
-          <td>10</td>
-          <td>10</td>
-        </tr>
         <tr>
           <td>西兰花</td>
           <td>100</td>
@@ -228,9 +192,105 @@ th{
           <td>10</td>
           <td>10</td>
         </tr>
+        
       </tbody>
     </table>
+    <!-- 
+       <table data-role="table" class="ui-responsive ui-shadow">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>牛肚</th>
+          <th>虾</th>
+          <th>海带</th>
+          <th>豆腐</th>
+          <th>鹅郡</th>
+          <th>鸭郡</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Obere Str. 57</td>
+          <td>Berlin</td>
+          <td>12209</td>
+          <td>Germany</td>
+        </tr>
  
+          <tr>
+          <td>黑毛肚</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>凤爪</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>豆皮</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>藕</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>笋子</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>木耳</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>土豆</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>西兰花</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>-->
       </tbody >
     </table>
   </div>
@@ -284,6 +344,18 @@ th{
                  });
                 
 			}); 
+			$('#myTable tr td:nth-of-type(4)').css({
+				'background':'#abc',
+				'color':'yellow'
+			})
+			var i=0;
+		 $('#myTable tr td:nth-of-type(4)').each(function(i,k){
+				//console.log(i);
+				//console.log(k.innerHTML)
+				i+=parseFloat(k.innerHTML);
+			
+			}) 
+			
 });
 
 	</script>
