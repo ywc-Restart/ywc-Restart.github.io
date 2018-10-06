@@ -16,7 +16,7 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <style>
 td{
-	 
+	  border: 1px solid #ccc;
 }
  tr {
     border: 1px solid #ccc;
@@ -57,42 +57,141 @@ th{
       </thead>
       <tbody>
         <tr>
+        
+          <td>名称</td>
+          <td>1号</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
           <td>牛肚</td>
+          <td>100</td>
           <td>200</td>
-          <td>Maria Anders</td>
-          <td>Obere Str. 57</td>
-          <td>Berlin</td>
-          <td>12209</td>
-          <td>Germany</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>虾</td>
+          <td>100</td>
+          <td>200</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
         </tr>
         <tr>
           <td>海带</td>
           <td>100</td>
-          <td>Antonio Moreno</td>
-          <td>Mataderos 2312</td>
-          <td>Mico D.F.</td>
-          <td>05023</td>
-          <td>Mexico</td>
+          <td>200</td>
+          <td>920</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>Around the Horn</td>
-          <td>Thomas Hardy</td>
-          <td>120 Hanover Sq.</td>
-          <td>London</td>
-          <td>WA1 1DP</td>
-          <td>UK</td>
+          <td>豆腐</td>
+          <td>100</td>
+          <td>200</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
         </tr>
         <tr>
-          <td>4</td>
-          <td>Berglunds snabbk</td>
-          <td>Christina Berglund</td>
-          <td>Berguvsven 8</td>
-          <td>Lule</td>
-          <td>S-958 22</td>
-          <td>Sweden</td>
+          <td>鹅郡</td>
+          <td>100</td>
+          <td>200</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
         </tr>
-
+        <tr>
+          <td>鸭郡</td>
+          <td>100</td>
+          <td>200</td>
+          <td>350</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+          <tr>
+          <td>黑毛肚</td>
+          <td>100</td>
+          <td>200</td>
+          <td>1610</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+         <tr>
+          <td>凤爪</td>
+          <td>100</td>
+          <td>200</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+         <tr>
+          <td>豆皮</td>
+          <td>100</td>
+          <td>200</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+         <tr>
+          <td>藕</td>
+          <td>100</td>
+          <td>200</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+         <tr>
+          <td>笋子</td>
+          <td>100</td>
+          <td>200</td>
+          <td>100</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+         <tr>
+          <td>木耳</td>
+          <td>100</td>
+          <td>200</td>
+          <td>262</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+         <tr>
+          <td>土豆</td>
+          <td>100</td>
+          <td>200</td>
+          <td>1200</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>西兰花</td>
+          <td>100</td>
+          <td>200</td>
+          <td>0</td>
+          <td>10</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
       </tbody>
     </table>
     <!-- 
@@ -119,7 +218,7 @@ th{
           <td>Germany</td>
         </tr>
  
-        <!-- <tr>
+          <tr>
           <td>黑毛肚</td>
           <td>Berglunds snabbk</td>
           <td>Christina Berglund</td>
@@ -213,7 +312,9 @@ th{
 			/*$(["data-role['ui-content'] a").hide();
 			$(".ui-table-columntoggle-btn").empty();*/
 			//向左
+			
 			$("#myTable").on("swipeleft",function(){
+				if($(this).offset().left>=-300){
                 //console.log($(this).width());
                 //console.log($(this).css('left'))
                /* $(this).css({
@@ -222,20 +323,25 @@ th{
                  $(this).animate({
                  	'left':'-=100px'
                  });
-                if($(this).offset().left<=-300){
-                	//console.log('xxxx')
-                	console.log('111')
-                }
-              
+                
+                	 
+                	//console.log('111')
+                
+  }            
 });
+
   //向右
 			   $("#myTable").on("swiperight",function(){
-			  /* $(this).css({
+			if($(this).offset().left==0){
+				return false;
+			}
+			/* $(this).css({
                 	'left':'+=100px'
                 })*/
 			    $(this).animate({
                  	'left':'+=100px'
                  });
+                
 			}); 
 });
 
