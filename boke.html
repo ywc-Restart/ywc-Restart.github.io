@@ -14,50 +14,228 @@
 
 <!-- 引入 jQuery Mobile 库 -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+td{
+	 
+}
+ tr {
+    border: 1px solid #ccc;
+}
 
+tr:nth-child(even) {
+  
+}
+th{
+ 
+}
+#myTable{
+	position:absolute;
+	left:0;
+	top:0;
+}
+</style>
 	</head>
 	<body>
-		<div data-role="page" id="pageone">
-  <div data-role="header">
+		<div data-role="page" id="pageone" >
+  <div data-role="header" data-position="fixed">
     <h1>串串产量</h1>
+     
   </div>
 
-  <div data-role="content">
-       <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-     <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-     <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-     <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-     <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
-    <p>页面内容</p>
+  <div data-role="ui-content">
+   <table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+      <thead>
+        <tr>
+          <th >CustomerID</th>
+          <th>CustomerName</th>
+          <th >ContactName</th>
+          <th >Address</th>
+          <th >City</th>
+          <th >PostalCode</th>
+          <th >Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>牛肚</td>
+          <td>200</td>
+          <td>Maria Anders</td>
+          <td>Obere Str. 57</td>
+          <td>Berlin</td>
+          <td>12209</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>海带</td>
+          <td>100</td>
+          <td>Antonio Moreno</td>
+          <td>Mataderos 2312</td>
+          <td>Mico D.F.</td>
+          <td>05023</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Around the Horn</td>
+          <td>Thomas Hardy</td>
+          <td>120 Hanover Sq.</td>
+          <td>London</td>
+          <td>WA1 1DP</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+
+      </tbody>
+    </table>
+    <!-- 
+       <table data-role="table" class="ui-responsive ui-shadow">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>牛肚</th>
+          <th>虾</th>
+          <th>海带</th>
+          <th>豆腐</th>
+          <th>鹅郡</th>
+          <th>鸭郡</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Obere Str. 57</td>
+          <td>Berlin</td>
+          <td>12209</td>
+          <td>Germany</td>
+        </tr>
+ 
+        <!-- <tr>
+          <td>黑毛肚</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>凤爪</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>豆皮</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>藕</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>笋子</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>木耳</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+         <tr>
+          <td>土豆</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>西兰花</td>
+          <td>Berglunds snabbk</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsven 8</td>
+          <td>Lule</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>-->
+      </tbody >
+    </table>
   </div>
 
-  <div data-role="footer">
+ 
+    <div data-role="footer" data-position="fixed">
     <h1>页面底部内容</h1>
   </div>
 </div> 
 	</body>
+	<script>
+		 
+		$(function(){
+ 
+   // 开始写 jQuery 代码...
+ 	   // console.log($("href['#myTable-popup']").hide())
+ 	    //$("href['#myTable-popup']").hide();
+			 console.log($(".ui-table-columntoggle-btn"))
+			
+			/*$(["data-role['ui-content'] a").hide();
+			$(".ui-table-columntoggle-btn").empty();*/
+			$("#myTable").on("swipeleft",function(){
+                //console.log($(this).width());
+                //console.log($(this).css('left'))
+               /* $(this).css({
+                	'left':'-=100px'
+                })*/
+                 $(this).animate({
+                 	'left':'-=100px'
+                 });
+                if($(this).offset().left<=-300){
+                	//console.log('xxxx')
+                	console.log('111')
+                }
+                //向右
+			   $("#myTable").on("swiperight",function(){
+			  /* $(this).css({
+                	'left':'+=100px'
+                })*/
+			    $(this).animate({
+                 	'left':'+=100px'
+                 });
+			}); 
+});
+});
+
+	</script>
 </html>
