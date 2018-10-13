@@ -5,7 +5,7 @@
 		<title>串串产量</title>
 		<!-- meta使用viewport以确保页面可自由缩放 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="css/index.css">
 <!-- 引入 jQuery Mobile 样式 -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 
@@ -15,30 +15,13 @@
 <!-- 引入 jQuery Mobile 库 -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <style>
-td{
-	  border: 1px solid #ccc;
-}
- tr {
-    border: 1px solid #ccc;
-}
 
-tr:nth-child(even) {
-  
-}
-th{
- 
-}
-#myTable{
-	position:absolute;
-	left:0;
-	top:0;
-}
 </style>
 	</head>
 	<body>
 		<div data-role="page" id="pageone" >
   <div data-role="header" data-position="fixed">
-    <h1>串串产量</h1>
+    <h1 id='abc'>串串产量</h1>
      
   </div>
 
@@ -301,6 +284,7 @@ th{
   </div>
 </div> 
 	</body>
+	<script src='js/index.js'></script>
 	<script>
 		 
 		$(function(){
