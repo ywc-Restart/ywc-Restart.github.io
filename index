@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			table{
+				width:500px;
+				border-collapse:collapse;border-spacing:0;
+				
+			}
+			td,th{
+				text-align: center;
+				border:1px solid #ccc;
+				vertical-align: top;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+				<th>名称</th>
+				<th>16号</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>木耳</td>
+					<td></td>
+				</tr>
+								<tr>
+					<td>牛肚</td>
+					<td>333</td>
+				</tr>
+								<tr>
+					<td>黑毛肚</td>
+					<td>385</td>
+				</tr>
+								<tr>
+					<td>豆皮</td>
+					<td>420</td>
+				</tr>
+								<tr>
+					<td>藕</td>
+					<td>520</td>
+				</tr>
+								<tr>
+					<td>土豆</td>
+					<td>850</td>
+				</tr>
+								<tr>
+					<td>鹅郡</td>
+					<td>140</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</body>
+</html>
